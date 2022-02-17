@@ -53,7 +53,7 @@ export function Share({
       })
       .join("\n");
 
-    return [title, guessString, "https://worldle.teuteuf.fr"].join("\n");
+    return [title, guessString, "https://yuannancheng.com/games/worldle/"].join("\n");
   }, [dayString, guesses, hideImageMode, rotationMode, theme]);
 
   return (
