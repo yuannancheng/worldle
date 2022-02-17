@@ -1,5 +1,7 @@
 {
   "i18n-ally.localesPaths": [
     "src"
-  ]
+  ],
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+  "aiXcoder.showTrayIcon": true
 }

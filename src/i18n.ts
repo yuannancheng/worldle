@@ -49,6 +49,29 @@ const resources = {
       buyMeACoffee: "Offrez moi un ☕ !",
     },
   },
+  zh_CN: {
+    translation: {
+      placeholder: "国家，地区…",
+      guess: "猜测",
+      share: "分享",
+      showOnGoogleMaps: "在 Google Maps 👀",
+      welldone: "做得好！",
+      unknownCountry: "未知国家！",
+      copy: "已将结果复制到剪贴板",
+      showCountry: "🗺️ 显示地图",
+      cancelRotation: "🌀 取消旋转",
+      settings: {
+        title: "设置",
+        distanceUnit: "距离单位",
+        theme: "主题",
+        difficultyModifiers: "难度调整",
+        startingNextDay: "设置明天生效",
+        noImageMode: "隐藏国家形象以获得更多挑战。",
+        rotationMode: "随机旋转国家图片。",
+      },
+      buyMeACoffee: "给我买一杯☕！",
+    },
+  },
 };
 
 i18n

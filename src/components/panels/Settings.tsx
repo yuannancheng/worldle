@@ -19,7 +19,7 @@ export function Settings({
   const { t } = useTranslation();
 
   return (
-    <Panel title={t("settings.title")} isOpen={isOpen} close={close}>
+    <Panel title="设置" isOpen={isOpen} close={close}>
       <div className="my-4">
         <div className="flex p-1">
           <select
@@ -30,14 +30,14 @@ export function Settings({
               updateSettings({ distanceUnit: e.target.value as "km" | "miles" })
             }
           >
-            <option value="km">KM</option>
-            <option value="miles">Miles</option>
+            <option value="km">千米</option>
+            <option value="miles">英里</option>
           </select>
           <label
             className="flex-1 ml-2 flex items-center"
             htmlFor="setting-distanceUnit"
           >
-            {t("settings.distanceUnit")}
+            距离单位
           </label>
         </div>
         <div className="flex p-1">
@@ -49,24 +49,24 @@ export function Settings({
               updateSettings({ theme: e.target.value as "light" | "dark" })
             }
           >
-            <option value="light">Light</option>
-            <option value="dark">Dark</option>
+            <option value="light">亮</option>
+            <option value="dark">暗</option>
           </select>
           <label
             className="flex-1 ml-2 flex items-center"
             htmlFor="setting-theme"
           >
-            {t("settings.theme")}
+            主题
           </label>
         </div>
       </div>
       <div className="my-4">
         <header className="my-2">
           <h3 className="text-lg font-bold">
-            {t("settings.difficultyModifiers")}
+            难度调整
           </h3>
           <div className="text-sm italic text-gray-500">
-            {t("settings.startingNextDay")}
+            设置明天生效
           </div>
         </header>
         <div className="flex p-1">
@@ -77,7 +77,7 @@ export function Settings({
             onChange={(e) => updateSettings({ noImageMode: e.target.checked })}
           />
           <label className="flex-1 ml-2" htmlFor="setting-noImage">
-            {t("settings.noImageMode")}
+            隐藏国家形象以获得更多挑战.
           </label>
         </div>
         <div className="flex p-1">
@@ -88,7 +88,7 @@ export function Settings({
             onChange={(e) => updateSettings({ rotationMode: e.target.checked })}
           />
           <label className="flex-1 ml-2" htmlFor="setting-rotationMode">
-            {t("settings.rotationMode")}
+            随机旋转国家图片。
           </label>
         </div>
       </div>

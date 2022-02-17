@@ -42,8 +42,8 @@ export function Share({
     const difficultyModifierEmoji = hideImageMode
       ? " 🙈"
       : rotationMode
-      ? " 🌀"
-      : "";
+        ? " 🌀"
+        : "";
     const title = `#Worldle #${dayCount} ${guessCount}/6${difficultyModifierEmoji}`;
 
     const guessString = guesses
@@ -65,7 +65,7 @@ export function Share({
       }}
     >
       <button className="border-2 px-4 uppercase bg-green-600 hover:bg-green-500 active:bg-green-700 text-white w-full">
-        {t("share")}
+        分享
       </button>
     </CopyToClipboard>
   );

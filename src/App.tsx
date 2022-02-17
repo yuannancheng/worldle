@@ -84,7 +84,7 @@ function App() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              {t("buyMeACoffee")}
+              给我买一杯☕！
             </a>
           </footer>
         </div>

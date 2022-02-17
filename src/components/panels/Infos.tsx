@@ -13,25 +13,24 @@ interface InfosProps {
 
 export function Infos({ isOpen, close, settingsData }: InfosProps) {
   return (
-    <Panel title="How to play" isOpen={isOpen} close={close}>
+    <Panel title="怎么玩" isOpen={isOpen} close={close}>
       <div className="space-y-3 text-justify border-b-2 border-gray-200 pb-3 mb-3">
         <div>
-          Guess the <Worldle /> in 6 guesses.
+          在6次机会中猜测 <Worldle /> 。
         </div>
-        <div>Each guess must be a valid country, territory, ...</div>
+        <div>每个猜测都必须是有效的国家，地区...</div>
         <div>
-          After each guess, you will have the distance, the direction and the
-          proximity from your guess and the target country.
+          每次猜测后，您将获得与您的猜测和目标国家/地区的距离、方向和接近度。
         </div>
       </div>
       <div className="space-y-3 text-justify border-b-2 border-gray-200 pb-3 mb-3">
-        <div className="font-bold">Examples</div>
+        <div className="font-bold">例如</div>
         <div>
           <Guesses
             rowCount={1}
             guesses={[
               {
-                name: "Chile",
+                name: "智利",
                 direction: "NE",
                 distance: 13_557_000,
               },
@@ -39,11 +38,10 @@ export function Infos({ isOpen, close, settingsData }: InfosProps) {
             settingsData={settingsData}
           />
           <div className="my-2">
-            Your guess <span className="uppercase font-bold">Chile</span> is{" "}
-            {formatDistance(13557000, settingsData.distanceUnit)} away from the
-            target country, the target country is in the North-East direction
-            and you have a only 32% of proximity because it&apos;s quite far
-            away!
+            你猜测的 <span className="uppercase font-bold">智利</span>
+            {" "} 距离目标国家
+            {formatDistance(13557000, settingsData.distanceUnit)}
+            ，目标国家在东北方向，你只有 32% 的接近度，因为它很远！
           </div>
         </div>
         <div>
@@ -51,7 +49,7 @@ export function Infos({ isOpen, close, settingsData }: InfosProps) {
             rowCount={1}
             guesses={[
               {
-                name: "Finland",
+                name: "芬兰",
                 direction: "SE",
                 distance: 3_206_000,
               },
@@ -59,10 +57,9 @@ export function Infos({ isOpen, close, settingsData }: InfosProps) {
             settingsData={settingsData}
           />
           <div className="my-2">
-            Your second guess{" "}
-            <span className="uppercase font-bold">Finland</span> is getting
-            closer! {formatDistance(3206000, settingsData.distanceUnit)} away,
-            South-East direction and 84%!
+            你的第二个猜测{" "}
+            <span className="uppercase font-bold">芬兰</span> 越来越近了！
+            {formatDistance(3206000, settingsData.distanceUnit)} ，东南方向，84%！
           </div>
         </div>
         <div>
@@ -70,7 +67,7 @@ export function Infos({ isOpen, close, settingsData }: InfosProps) {
             rowCount={1}
             guesses={[
               {
-                name: "Lebanon",
+                name: "黎巴嫩",
                 direction: "N",
                 distance: 0,
               },
@@ -78,38 +75,27 @@ export function Infos({ isOpen, close, settingsData }: InfosProps) {
             settingsData={settingsData}
           />
           <div className="my-2">
-            Next guess, <span className="uppercase font-bold">Lebanon</span>,
-            it&apos;s the country to guess! Congrats! 🎉
+            下一个猜测，<span className="uppercase font-bold">黎巴嫩</span>，
+            它就是你要猜的国家！恭喜！🎉
           </div>
         </div>
       </div>
       <div className="space-y-3 text-justify border-b-2 border-gray-200 pb-3 mb-3 font-bold">
-        A new <Worldle /> will be available every day!
+        每天都会有一个新的 <Worldle /> 可用！
       </div>
       <div className="space-y-3 text-justify border-b-2 border-gray-200 pb-3 mb-3">
-        <div className="font-bold">About distance</div>
+        <div className="font-bold">关于距离</div>
         <div>
-          The distances displayed correspond to the distances between the
-          selected and the target territory centers.
+          显示的距离对应于选定区域中心与目标区域中心之间的距离。
         </div>
         <div>
-          For instance, the computed distance between United States and Canada
-          is around {formatDistance(2_260_000, settingsData.distanceUnit)} even
-          if they have a common border.
+          例如，美国和加拿大之间的计算距离约为 {formatDistance(2_260_000, settingsData.distanceUnit)}
+          ，即使它们有共同的边.。
         </div>
       </div>
       <div className="space-y-3 text-justify border-b-2 border-gray-200 pb-3 mb-3">
-        <Worldle /> has been <span className="font-bold">heavily</span> inspired
-        by{" "}
-        <a
-          className="underline"
-          href="https://www.powerlanguage.co.uk/wordle/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Wordle
-        </a>{" "}
-        created by{" "}
+        <Worldle /> <span className="font-bold">深受</span>
+        {" "}
         <a
           className="underline"
           href="https://twitter.com/powerlanguish"
@@ -117,12 +103,21 @@ export function Infos({ isOpen, close, settingsData }: InfosProps) {
           rel="noopener noreferrer"
         >
           Josh Wardle (@powerlanguish)
-        </a>
-        .
+        </a>{" "}
+        创建的
+        {" "}<a
+          className="underline"
+          href="https://www.powerlanguage.co.uk/wordle/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Wordle
+        </a>{" "}
+        启发
       </div>
       <div className="space-y-3 text-justify pb-3">
         <div>
-          Made by{" "}
+          由{" "}
           <a
             className="underline"
             href="https://twitter.com/teuteuf"
@@ -130,17 +125,27 @@ export function Infos({ isOpen, close, settingsData }: InfosProps) {
             rel="noopener noreferrer"
           >
             @teuteuf
-          </a>
+          </a>{" "}制作
         </div>
         <div>
-          Want to support?{" "}
+          想要支持？{" "}
           <a
             className="underline"
             href="https://www.ko-fi.com/teuteuf"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Buy me a coffee! ☕
+            给我买杯咖啡！ ☕
+          </a>
+        </div>
+        <div>
+          <a
+            className="underline"
+            href="https://github.com/yuannancheng/worldle"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            源码
           </a>
         </div>
       </div>
