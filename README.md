@@ -1,4 +1,4 @@
-# Wor**l**dle
+# WOR**L**DLE
 
 原作者仓库: https://github.com/teuteuf/worldle
 
