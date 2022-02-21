@@ -68,7 +68,7 @@ export function Game({ settingsData }: GameProps) {
       );
 
       if (guessedCountry == null) {
-        toast.error("未知国家！");
+        toast.error(t("unknownCountry"));
         return;
       }
 
@@ -82,7 +82,7 @@ export function Game({ settingsData }: GameProps) {
       setCurrentGuess("");
 
       if (newGuess.distance === 0) {
-        toast.success(t("做得好！"), { delay: 2000 });
+        toast.success(t("welldone"), { delay: 2000 });
       }
     },
     [addGuess, country, currentGuess, i18n.resolvedLanguage, t]
@@ -113,8 +113,9 @@ export function Game({ settingsData }: GameProps) {
       )}
       <div className="my-1">
         <img
-          className={`max-h-52 m-auto transition-transform duration-700 ease-in dark:invert ${hideImageMode && !gameEnded ? "h-0" : "h-full"
-            }`}
+          className={`max-h-52 m-auto transition-transform duration-700 ease-in dark:invert ${
+            hideImageMode && !gameEnded ? "h-0" : "h-full"
+          }`}
           alt="country to guess"
           src={`images/countries/${country.code.toLowerCase()}/vector.svg`}
           style={
@@ -160,7 +161,7 @@ export function Game({ settingsData }: GameProps) {
               target="_blank"
               rel="noopener noreferrer"
             >
-              在 Google Maps 👀
+              {t("showOnGoogleMaps")}
             </a>
           </>
         ) : (
@@ -175,7 +176,7 @@ export function Game({ settingsData }: GameProps) {
                 className="border-2 uppercase my-0.5 hover:bg-gray-50 active:bg-gray-100 dark:hover:bg-slate-800 dark:active:bg-slate-700"
                 type="submit"
               >
-                🌍 猜测
+                🌍 {t("guess")}
               </button>
             </div>
           </form>

@@ -19,7 +19,7 @@ export function Settings({
   const { t } = useTranslation();
 
   return (
-    <Panel title="设置" isOpen={isOpen} close={close}>
+    <Panel title={t("settings.title")} isOpen={isOpen} close={close}>
       <div className="my-4">
         <div className="flex p-1">
           <select
@@ -37,7 +37,7 @@ export function Settings({
             className="flex-1 ml-2 flex items-center"
             htmlFor="setting-distanceUnit"
           >
-            距离单位
+            {t("settings.distanceUnit")}
           </label>
         </div>
         <div className="flex p-1">
@@ -56,17 +56,17 @@ export function Settings({
             className="flex-1 ml-2 flex items-center"
             htmlFor="setting-theme"
           >
-            主题
+            {t("settings.theme")}
           </label>
         </div>
       </div>
       <div className="my-4">
         <header className="my-2">
           <h3 className="text-lg font-bold">
-            难度调整
+            {t("settings.difficultyModifiers")}
           </h3>
           <div className="text-sm italic text-gray-500">
-            设置明天生效
+            {t("settings.startingNextDay")}
           </div>
         </header>
         <div className="flex p-1">
@@ -77,7 +77,7 @@ export function Settings({
             onChange={(e) => updateSettings({ noImageMode: e.target.checked })}
           />
           <label className="flex-1 ml-2" htmlFor="setting-noImage">
-            隐藏国家形象以获得更多挑战.
+            {t("settings.noImageMode")}
           </label>
         </div>
         <div className="flex p-1">
@@ -88,7 +88,7 @@ export function Settings({
             onChange={(e) => updateSettings({ rotationMode: e.target.checked })}
           />
           <label className="flex-1 ml-2" htmlFor="setting-rotationMode">
-            随机旋转国家图片。
+            {t("settings.rotationMode")}
           </label>
         </div>
       </div>

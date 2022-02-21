@@ -105,7 +105,7 @@ function App() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              给我买一杯☕！
+              {t("buyMeACoffee")}
             </a>
           </footer>
         </div>

@@ -1384,10 +1384,10 @@ export function getCountryName(language: string, country: Country) {
   if (language === "fr") {
     return frenchCountryNames[country.code];
   }
-  if (language === "en") {
-    return country.name;
+  if (language === "zh-CN") {
+    return chineseCountryNames[country.code];
   }
-  return chineseCountryNames[country.code];
+  return country.name;
 }
 
 export function sanitizeCountryName(countryName: string): string {
