@@ -31,8 +31,7 @@
   
   - 增加PWA功能
   
-- 增加统计功能
-  
+  - 增加统计功能
   - 修复 [i18n.ts无效问题](https://github.com/teuteuf/worldle/issues/43)
   
 - [67db30b](https://github.com/teuteuf/worldle/tree/67db30bdf79c0965c19acd53f5744c1773eb307d)
