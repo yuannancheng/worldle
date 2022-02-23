@@ -15,18 +15,28 @@
 ## 本仓库更新日志
 
 - [cdfd90d](https://github.com/teuteuf/worldle/tree/cdfd90d094a378fa744f886e9732dd0b1c53c9fe)
+  
   **主分支**
+  
   - 优化方向计算函数
   - 修复塞尔维亚图像
+  
   **当前分支**
+
   - 优化输入框样式
-
+  
 - [d88d7a0](https://github.com/teuteuf/worldle/tree/d88d7a07e95b37d727d69bda8721a6c4424eced6)
+  
   **主分支**
+  
   - 增加PWA功能
-  - 增加统计功能
+  
+- 增加统计功能
+  
   - 修复 [i18n.ts无效问题](https://github.com/teuteuf/worldle/issues/43)
-
+  
 - [67db30b](https://github.com/teuteuf/worldle/tree/67db30bdf79c0965c19acd53f5744c1773eb307d)
+  
   **当前分支**
+  
   - 修复了中国地图、将界面改成了中文。
