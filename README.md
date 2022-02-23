@@ -22,7 +22,7 @@
   
   **当前分支**
   
-- 优化输入框样式
+  - 优化输入框样式
   
 - [d88d7a0](https://github.com/teuteuf/worldle/tree/d88d7a07e95b37d727d69bda8721a6c4424eced6)
   
