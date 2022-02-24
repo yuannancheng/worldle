@@ -104,7 +104,7 @@ const resources = {
       buyMeACoffee: "Offrez moi un ☕ !",
     },
   },
-  'zh-CN': {
+  "zh-CN": {
     translation: {
       placeholder: "国家，地区…",
       guess: "猜一猜",
