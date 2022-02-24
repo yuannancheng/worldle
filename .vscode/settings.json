@@ -1,4 +1,6 @@
 {
   "i18n-ally.localesPaths": ["src"],
-  "editor.formatOnSave": false
+  "editor.formatOnSave": false,
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+  "aiXcoder.showTrayIcon": true
 }

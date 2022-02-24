@@ -103,7 +103,7 @@ export function Infos({ isOpen, close, settingsData }: InfosProps) {
         >
           Josh Wardle (@powerlanguish)
         </a>{" "}
-        创建的
+        创建的{" "}
         <a
           className="underline"
           href="https://www.powerlanguage.co.uk/wordle/"
