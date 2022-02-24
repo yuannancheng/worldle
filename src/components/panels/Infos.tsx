@@ -38,8 +38,8 @@ export function Infos({ isOpen, close, settingsData }: InfosProps) {
             settingsData={settingsData}
           />
           <div className="my-2">
-            你猜测的 <span className="uppercase font-bold">智利</span>
-            {" "} 距离目标国家
+            你猜测的 <span className="uppercase font-bold">智利</span>{" "}
+            距离目标国家
             {formatDistance(13557000, settingsData.distanceUnit)}
             ，目标国家在东北方向，你只有 32% 的接近度，因为它很远！
           </div>
@@ -57,9 +57,10 @@ export function Infos({ isOpen, close, settingsData }: InfosProps) {
             settingsData={settingsData}
           />
           <div className="my-2">
-            你的第二个猜测{" "}
-            <span className="uppercase font-bold">芬兰</span> 越来越近了！
-            {formatDistance(3206000, settingsData.distanceUnit)} ，东南方向，84%！
+            你的第二个猜测 <span className="uppercase font-bold">芬兰</span>{" "}
+            越来越近了！
+            {formatDistance(3206000, settingsData.distanceUnit)}
+            ，东南方向，84%！
           </div>
         </div>
         <div>
@@ -75,27 +76,25 @@ export function Infos({ isOpen, close, settingsData }: InfosProps) {
             settingsData={settingsData}
           />
           <div className="my-2">
-            下一个猜测，<span className="uppercase font-bold">黎巴嫩</span>，
-            它就是你要猜的国家！恭喜！🎉
+            下一个猜测，<span className="uppercase font-bold">黎巴嫩</span>
+            ，它就是正确答案！恭喜！🎉
           </div>
         </div>
       </div>
       <div className="space-y-3 text-justify border-b-2 border-gray-200 pb-3 mb-3 font-bold">
-        每天都会有一个新的 <Worldle /> 可用！
+        <Worldle /> 每天更换一个新的国家供猜测！
       </div>
       <div className="space-y-3 text-justify border-b-2 border-gray-200 pb-3 mb-3">
         <div className="font-bold">关于距离</div>
+        <div>显示的距离是猜测区域中心与目标区域中心之间的距离。</div>
         <div>
-          显示的距离对应于选定区域中心与目标区域中心之间的距离。
-        </div>
-        <div>
-          例如，美国和加拿大之间的计算距离约为 {formatDistance(2_260_000, settingsData.distanceUnit)}
-          ，即使它们有共同的边.。
+          例如，美国和加拿大之间的计算距离约为{" "}
+          {formatDistance(2_260_000, settingsData.distanceUnit)}
+          ，即使它们有共同的边。
         </div>
       </div>
       <div className="space-y-3 text-justify border-b-2 border-gray-200 pb-3 mb-3">
-        <Worldle /> <span className="font-bold">深受</span>
-        {" "}
+        <Worldle /> <span className="font-bold">深受</span>{" "}
         <a
           className="underline"
           href="https://twitter.com/powerlanguish"
@@ -105,7 +104,7 @@ export function Infos({ isOpen, close, settingsData }: InfosProps) {
           Josh Wardle (@powerlanguish)
         </a>{" "}
         创建的
-        {" "}<a
+        <a
           className="underline"
           href="https://www.powerlanguage.co.uk/wordle/"
           target="_blank"
@@ -125,10 +124,11 @@ export function Infos({ isOpen, close, settingsData }: InfosProps) {
             rel="noopener noreferrer"
           >
             @teuteuf
-          </a>{" "}制作
+          </a>{" "}
+          制作
         </div>
         <div>
-          想要支持？{" "}
+          想要支持 <Worldle /> ？{" "}
           <a
             className="underline"
             href="https://www.ko-fi.com/teuteuf"
@@ -139,13 +139,14 @@ export function Infos({ isOpen, close, settingsData }: InfosProps) {
           </a>
         </div>
         <div>
+          源码：
           <a
             className="underline"
             href="https://github.com/yuannancheng/worldle"
             target="_blank"
             rel="noopener noreferrer"
           >
-            源码
+            GitHub
           </a>
         </div>
       </div>

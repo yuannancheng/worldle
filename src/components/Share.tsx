@@ -49,7 +49,7 @@ export function Share({
     const bestPercent = `(${computeProximityPercent(
       bestDistance
     ).toString()}%)`;
-    const title = `#Worldle #${dayCount} ${guessCount}/6 ${bestPercent}${difficultyModifierEmoji}`;
+    const title = `#Worldle# ${dayCount} ${guessCount}/6 ${bestPercent}${difficultyModifierEmoji}`;
 
     const guessString = guesses
       .map((guess) => {
@@ -60,7 +60,9 @@ export function Share({
       })
       .join("\n");
 
-    return [title, guessString, "https://yuannancheng.com/games/worldle/"].join("\n");
+    return [title, guessString, "https://yuannancheng.com/games/worldle/"].join(
+      "\n"
+    );
   }, [dayString, guesses, hideImageMode, rotationMode, theme]);
 
   return (
@@ -72,7 +74,7 @@ export function Share({
       }}
     >
       <button className="border-2 px-4 uppercase bg-green-600 hover:bg-green-500 active:bg-green-700 text-white w-full">
-      {t("share")}
+        {t("share")}
       </button>
     </CopyToClipboard>
   );

@@ -126,8 +126,8 @@ export function Game({ settingsData }: GameProps) {
           style={
             rotationMode && !gameEnded
               ? {
-                transform: `rotate(${randomAngle}deg) scale(${imageScale})`,
-              }
+                  transform: `rotate(${randomAngle}deg) scale(${imageScale})`,
+                }
               : {}
           }
         />
